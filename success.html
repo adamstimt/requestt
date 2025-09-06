@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Pixellet&display=swap" rel="stylesheet">
+
+    <title>success</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col justify-start items-center w-full min-h-screen">
+    <!-- Background Wrapper -->
+    <div
+      class="relative w-full min-h-screen bg-[#0b021c] flex justify-center items-start overflow-hidden"
+      style="
+        background-image: url('./images/img_group_46.png');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!-- Background Decorations (no clicks) -->
+      <img
+        src="./images/img_dots_3.png"
+        alt="dots left"
+        class="pointer-events-none select-none absolute top-0 left-0 w-[191px] h-[142px] sm:w-[286px] sm:h-[213px] md:w-[382px] md:h-[284px] z-0"
+      />
+      <img
+        src="./images/img_group_16.png"
+        alt="dots right top"
+        class="pointer-events-none select-none absolute top-0 right-0 w-[373px] h-[109px] sm:w-[559px] sm:h-[164px] md:w-[746px] md:h-[218px] z-0"
+      />
+
+      <!-- Overlay Grid (no clicks) -->
+      <div
+        class="pointer-events-none absolute inset-0 z-0"
+        style="
+          background-image: url('./images/img_grid.png');
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>
+
+      <!-- Main Content -->
+      <div class="relative w-full flex flex-col items-center z-10">
+        <!-- Logo -->
+        <img
+          src="./images/img_logofull_1_5.png"
+          alt="Hackwave Logo"
+          class="w-[72px] h-auto sm:w-[108px] md:w-[174px] mt-6 mr-[830px]"
+        />
+
+        <!-- Title -->
+        <h1
+          class="text-[36px] sm:text-[54px] md:text-[120px] whitespace-nowrap mt-[200px]"
+          style="
+            font-family: 'Pixellet', monospace;
+            color: rgba(214, 189, 255, 1);
+            text-shadow: 
+              0px 6px 8px rgba(255, 255, 255, 0.4),
+              0px 12px 16px rgba(255, 255, 255, 0.25),
+              0px 18px 24px rgba(255, 255, 255, 0.15);
+          "  >
+          REQUEST CENTER
+        </h1>
+
+        <!-- Verified Box -->
+        <div
+          class="border-2 w-[90%] max-w-[700px] h-[400px] border-pink-500 px-6 py-10 rounded-lg text-center mt-[150px]"
+          style="
+            border: 8px solid #ec53b0;
+            border-radius: 12px;
+          "
+        >
+          <!-- Checkmark -->
+         <div class="">
+  <img 
+    src="./images/5d0df0c7a4f2729070e4699630a10aa724b335a3.png" 
+    alt="Success Icon" 
+    class="w-[90px] h-[90px] sm:w-[110px] sm:h-[110px] md:w-[130px] md:h-[130px] mx-auto select-none"
+  />
+</div>
+
+          <!-- Text -->
+          <p
+            class="text-white text-[18px] sm:text-[20px] md:text-[34px] mt-[10px] leading-relaxed font-['Press_Start_2P']"
+          >
+            Your request has <br />
+            been successfully <br />
+            submitted.
+          </p>
+        </div>
+
+        <!-- Back button -->
+        <div class="mt-[300px]">
+          <button
+            onclick="returnhome()"
+            class="bg-[#ec53b0] font-['Press_Start_2P'] w-[250px] sm:w-[370px] h-[130px] text-white text-xl sm:text-4xl py-4 px-8 rounded-[12px]"
+            style="
+              box-shadow: 
+                0px 6.85px 15.06px rgba(236, 83, 176, 0.24),
+                0px 28.75px 28.75px rgba(236, 83, 176, 0.2),
+                0px 62.98px 38.34px rgba(236, 83, 176, 0.12),
+                0px 112.27px 45.18px rgba(236, 83, 176, 0.04),
+                0px 4px 4px rgba(236, 83, 176, 0.25);
+            "
+          >
+            CLOSE
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ITC Logo in Center with Blending (no clicks) -->
+    <div
+      class="pointer-events-none relative w-full flex flex-col justify-start items-center -mt-[100px] sm:-mt-[150px] md:-mt-[657px] z-0"
+    >
+      <div class="relative w-full flex justify-center items-center">
+        <img
+          src="./images/img_dots_3.png"
+          alt="glow effect"
+          class="w-full max-w-[976px] h-auto px-[52px] select-none"
+        />
+      </div>
+      <div
+        class="relative w-[1180px] -ml-[100px] flex flex-col justify-center items-end pt-[64px] pb-[64px] px-[56px] -mt-[680px]"
+        style="background-image: url('./images/img_blending_1687300048313.png');"
+      >
+        <div class="w-full flex justify-center items-end mt-[474px]">
+          <img
+            src="./images/img_itc.png"
+            alt="Information Technology Community"
+            class="w-[230px] sm:w-[250px] md:w-[330px] h-auto select-none"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script>
+      function returnhome() {
+        window.location.href = "./index.html";
+      }
+    </script>
+  </body>
+</html>

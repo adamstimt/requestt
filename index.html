@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hackwave 3.0 - Welcome</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixellet&display=swap" rel="stylesheet">
+
+<style>
+    body {
+      font-family: 'Orbitron', 'Press Start 2P', monospace;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background: #0b021c;
+    }
+    *, *::before, *::after {
+      box-sizing: inherit;
+    }
+  </style>
+</head>
+<body class="bg-[#0b021c] flex flex-col justify-start items-center w-full min-h-screen">
+
+  <!-- Main Container -->
+  <div class="relative w-full min-h-screen flex justify-center items-center overflow-hidden">
+
+    <!-- Background Images -->
+    <div class="absolute inset-0 w-full h-full">
+      <img src="./images/img_dots_3.png" alt="decorative dots" class="absolute top-0 left-0 w-[34%] h-auto z-10">
+      <img src="./images/img_group_16.png" alt="decorative group" class="absolute top-0 right-0 w-[66%] h-auto z-10 -ml-[48px]">
+      <img src="./images/img_dots_3_blue_gray_100.png" alt="blue dots" class="absolute top-[19%] right-0 w-[54%] h-auto z-10">
+      <img src="./images/img_dots_3_blue_gray_100_568x660.svg" alt="blue dots bottom" class="absolute bottom-[26%] left-[18%] w-[60%] h-auto z-10">
+      <img src="./images/img_dots_3_blue_gray_100_568x554.png" alt="blue dots left" class="absolute bottom-[19%] left-0 w-[50%] h-auto z-10">
+    </div>
+
+       <div
+        class="pointer-events-none absolute inset-0 z-0"
+        style="
+          background-image: url('./images/img_grid.png');
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>   
+       <!-- Main Content -->
+        
+    <div class="relative z-20 w-full h-full flex flex-col justify-start items-center">
+
+      <!-- Background Grid -->
+
+      <!-- Logo -->
+      <div class="relative z-30 w-full pt-[51px] pl-[48px]  ">
+        <img src="./images/img_logofull_1_5.png" alt="Hackwave Logo" class="w-[174px] h-[124px] ">
+      </div>
+
+      <!-- Central Character & Text -->
+      <div class="relative z-30 flex flex-col justify-start items-center w-full flex-1 px-4 sm:px-6 lg:px-[154px] pt-[42px] ">
+       <div class="flex flex-col justify-start items-center w-full max-w-[790px] mx-auto text-center space-y-[190px] mt-[280px] ">
+  <!-- Title -->
+        <h1 class="text-[36px] sm:text-[54px] md:text-[120px] whitespace-nowrap"
+    style="
+      font-family: 'Pixellet', monospace;
+      color: rgba(214, 189, 255, 1);
+      text-shadow: 
+        0px 6px 8px rgba(255, 255, 255, 0.4),
+        0px 12px 16px rgba(255, 255, 255, 0.25),
+        0px 18px 24px rgba(255, 255, 255, 0.15);
+    ">
+    REQUEST CENTER
+    </h1>
+
+
+
+
+  <!-- Paragraph -->
+  <p class="text-[#ffffff] text-[16px] sm:text-[20px] md:text-[30px]   leading-relaxed px-6 "
+     style="font-family: 'Press Start 2P';">
+    Welcome to the Request Center, press start to <br />
+    fill in your details and let us know what you <br />
+    need. Our team will take care of it!
+  </p>
+</div>
+
+
+        <!-- Press Start Button -->
+        <div class="mt-[100px] sm:mt-[150px] md:mt-[176px] mb-8">
+          <button 
+            onclick="startGame()" 
+            class="bg-[#ec53b0] h-[160px] w-[440px]  rounded-[20px] px-[46px] py-[48px] shadow-[0px_0px_1px_rgba(236,83,176,0.24)] hover:shadow-[0px_0px_20px_rgba(236,83,176,0.5)] active:scale-95">
+            <span class="text-[18px]  sm:text-[28px] md:text-[40px] text-[#eaf4fc]" style="font-family: 'Press Start 2P';">
+              START
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <!-- ITC Logo Bottom -->
+           <div
+          class="pointer-events-none relative w-full flex flex-col justify-start items-center -mt-[100px] sm:-mt-[150px] md:-mt-[200px] z-0"
+        >
+          <div class="relative w-full flex justify-center items-center">
+            <img
+              src="./images/img_dots_3.png"
+              alt="glow effect"
+              class="w-full max-w-[976px] h-auto px-[52px] select-none"
+            />
+          </div>
+          <div
+            class="relative w-[1230px] flex flex-col justify-center items-end pt-[64px] pb-[64px] px-[56px] -mt-[760px]"
+            style="background-image: url('./images/img_blending_1687300048313.png');"
+          >
+            <div class="w-full flex justify-center items-end mt-[474px]">
+              <img
+                src="./images/img_itc.png"
+                alt="Information Technology Community"
+                class="w-[230px] sm:w-[250px] md:w-[330px] h-auto select-none"
+              />
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+
+  <script>
+    function startGame() {
+
+      window.location.href = "request.html";
+    }
+  </script>
+</body>
+</html>
